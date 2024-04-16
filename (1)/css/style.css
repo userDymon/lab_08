@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 2%;
+    background-color: #deded8;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+header{
+    background-color: #333333;
+    color: #c8cccc;
+    padding: 2%;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    text-wrap: nowrap;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 100px;
+    background-color: #222222;
+    color: #c8cccc;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav button{
+    background-color: #cccccc;
+    border: none;
+    color: #000;
+}
+
+main{
+    padding: 2%;
+    line-height: 1.5rem;
+}
+
+main p{
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    nav{
+        height: 60px;
+        align-items: center;
+    }
+
+    nav button{
+        width: 19%;
+        height: 50%;
+    }
+
+    main{
+        margin-top: 160px;
+    }
+
+    aside{
+        background-color: #fff;
+        padding: 5% 2%;
+    }
+
+    footer{
+        padding: 5% 2%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav{
+        flex-direction: column;
+        padding: 2%;
+        height: 170px;
+    }
+
+    nav button{
+        width: 100%;
+        height: 19%;
+    }
+
+    main{
+        margin-top: 270px;
+    }
+
+    aside{
+        background-color: #fff;
+        padding: 5% 2%;
+    }
+
+    footer{
+        padding: 5% 2%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    nav{
+        height: 60px;
+        align-items: center;
+    }
+
+    nav button{
+        width: 19%;
+        height: 50%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    main{
+        margin-top: 160px;
+        margin-left: 30%;
+        padding: 15px;
+        min-height: calc(100vh - 160px - 30px);
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    aside{
+        background-color: #fff;
+        position: fixed;
+        float: left;
+        width: 30%;
+        top: 160px;
+        left: 0;
+        padding: 15px;
+        height: calc(100vh - 160px);
+        z-index: -1;
+        font-size: 18px;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    
+    footer{
+        position: static;
+        height: 30px;
+        background-color: #deded8;
+        font-size: 18px;
+    }
+}

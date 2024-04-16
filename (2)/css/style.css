@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #004241;
+    color: #fff;
+}
+
+nav{
+    padding: 5%;
+    color: #4e7b85;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav li::after{
+    content: " | ";
+}
+
+h1{
+    padding: 0 5%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+}
+
+.block span{
+    text-wrap: nowrap;
+}
+
+.block span:nth-child(odd){
+    color: #4e7b85;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 1rem;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .container{
+        padding: 5%;
+    }
+
+    .image{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+    .info{
+        width: 70%;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    
+    .block{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media  screen and (min-width: 600px) and (max-width: 960px) {
+    body{
+        font-size: 1.5rem;
+    }
+
+    .text{
+        width: 90%;
+    }
+
+    .container{
+        padding: 5%;
+    }
+
+    .image{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .block{
+        width: 30%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    nav{
+        padding: 2%;
+    }
+
+    .text{
+        width: 45%;
+        font-size: 2rem;
+    }
+
+    .container{
+        padding: 2%;
+    }
+
+    .image{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info{
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5%;
+    }
+
+    .block{
+        width: 22%;
+        font-size: 1.3rem;
+    }
+}
